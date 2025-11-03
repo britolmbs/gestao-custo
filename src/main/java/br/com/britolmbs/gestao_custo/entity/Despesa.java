@@ -79,4 +79,17 @@ public class Despesa {
     public void setData_criacao(LocalDate data_criacao) {
         this.data_criacao = data_criacao;
     }
+
+    @Override
+    public String toString() {
+        return "Despesa{" +
+                "id=" + id +
+                ", descricao='" + descricao + '\'' +
+                ", data=" + data +
+                ", valor=" + valor +
+                ", categoria='" + categoria + '\'' +
+                ", email='" + email + '\'' +
+                ", data_criacao=" + data_criacao +
+                '}';
+    }
 }
