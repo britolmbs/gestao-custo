@@ -7,6 +7,6 @@ import org.springframework.stereotype.Service;
 public class CadastroDespesaUseCase {
 
     public void execute(Despesa despesa){
-        System.out.println(despesa.getCategoria());
+
     }
 }
