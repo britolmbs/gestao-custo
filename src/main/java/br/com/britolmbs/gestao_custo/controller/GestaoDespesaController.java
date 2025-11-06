@@ -16,8 +16,8 @@ public class GestaoDespesaController {
     CadastroDespesaUseCase cadastroDespesaUseCase;
 
     @PostMapping("/create")
-    public void create(@RequestBody Despesa despesa) {
+    public Despesa create(@RequestBody Despesa despesa) {
 
-        cadastroDespesaUseCase.execute(despesa);
+       return cadastroDespesaUseCase.execute(despesa);
     }
 }
